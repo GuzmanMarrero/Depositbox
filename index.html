@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>DepositBox inicio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet" media="screen">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+<div class="container-fluid p-5 bg-primary text-white text-center">
+  <img src="images/logoDepositBox.png" aling=top height ="400" with="400" >
+  
+  <p id="textoDescripcion"></p>
+  
+  <h1>¡Hola Bienvenidos a Deposit Box!</h1>
+  
+  <p>El Objetivo de este sistma es simular alguna tarea de las cuales cumpla un WMS(sistema de gestión de almacenes)</p> 
+  <p1>Consistiendo de tres herramientas :</p1>
+</div>
+  
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-sm-4">
+      <h3>1)Registro de caja</h3>
+      <p>=>Ingresando su descripcion para que quede registrado:</p>
+      <p>=Ojetivo de poderse ver en un inventario como un catalogo editable</p>
+      <button type="button" onclick="registroBox1()" class="btn btn-primary btn-lg">Registro desde pantalla emergente 01</button>
+      <button type="button" onclick="registroBox2()" class="btn btn-primary btn-lg">Registro desde pantalla emergente 02</button>
+      <button type="button" onclick="registroBox3()" class="btn btn-primary btn-lg">Registro desde pantalla emergente 03</button>
+    </div>
+    <div class="col-sm-4">
+      <h3>2)Registro de ubicación</h3>
+      <p>=>Ingresando la coordenada y capacidad volumetrica determenidad:</p>
+      <p>=Para lograr seguimiento de donde y la hora donde estan las cajas registradas</p>
+    </div>
+    <div class="col-sm-4">
+      <h3>3)Tranferencia de cajas</h3>        
+      <p>=>Objetivo de tener un registro de movimiento de las cajas dentro depocito:</p>
+      <p>=Tomando en cuenta que se procesa desde etiquetas de transferencia</p>
+    </div>
+  </div>
+</div>
+
+<div id="boxs"></div>
+
+
+<button type="button" onclick="showHideTableBox()"class="btn btn-primary btn-lg">"Mirar o ocultar tabla 01 de Inventario Box"</button>
+
+<div id="table"></div>
+
+<div class="accordion accordion-flush" id="accordionFlushExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+        Tabla 02 De Inventario De DepositBox
+      </button>
+    </h2>
+  </div>
+  <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+    <div class="accordion-body">
+      <div id="table02">
+    </div>
+    </div>
+  </div>
+</div>
+
+<script src="js/sweetalert2.all.js"></script>
+<script src="js/main.js"></script>
+<script src="js/boxs.js"></script>
+<script src="js/inventoryBox.js"></script>
+<script src="js/InventoryUbication.js"></script>
+<script src="js/ticketTranferBox.js"></script>
+</body>
+</html>

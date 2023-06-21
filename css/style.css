@@ -1,0 +1,26 @@
+
+div{
+    font:12px Arial, sans-serif;
+    padding: 10px 20px;
+
+}
+
+th {
+    font:12px Arial, sans-serif;
+    padding: 10px 20px;
+    border: 1px solid #000;
+}
+td {
+    font:17px Arial, sans-serif;
+    padding: 10px 20px;
+    border: 1px solid #000;
+}
+
+button{
+    margin: 30px;
+}
+
+img{
+    font:12px Arial, sans-serif;
+    padding: 10px 20px;
+}
